@@ -1,0 +1,6 @@
+.vscode
+.vs
+
+omdb-nominate/node_modules
+omdb-nominate/yarn.lock
+omdb-nominate/build
