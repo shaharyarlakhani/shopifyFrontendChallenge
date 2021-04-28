@@ -1,4 +1,6 @@
 import './App.css';
+import './SearchBar.js';
+import SearchBar from './SearchBar.js';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
           Pick your OMDB Nominations!
         </p>
       </header>
+      <SearchBar />
     </div>
   );
 }
