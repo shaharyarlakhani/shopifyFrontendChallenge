@@ -1,38 +1,40 @@
 import React from 'react'
+import Table from 'react-bootstrap/Table'
+import Button from 'react-bootstrap/Button'
 
 function ListBoxes() {
     return (
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-            <table>
+        <div>
+        <Button variant="primary">Primary</Button>{' '}
+        <Table striped bordered hover>
+            <thead>
                 <tr>
-                    <th>Movie Name</th>
-                    <th>Info</th>
-                    <th>Nominate Status</th>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
                 </tr>
                 <tr>
-                    <td>3 Idiots</td>
-                    <td>Great</td>
-                    <td>Nominated</td>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
                 </tr>
                 <tr>
-                    <td>Bad Movie</td>
-                    <td>Bad</td>
-                    <td>Nominate?</td>
+                <td>3</td>
+                <td colSpan="2">Larry the Bird</td>
+                <td>@twitter</td>
                 </tr>
-            </table>
-
-            <table>
-                <tr>
-                    <th>Movie Name</th>
-                    <th>Info</th>
-                    <th>Nominate Action</th>
-                </tr>
-                <tr>
-                    <td>3 Idiots</td>
-                    <td>Great</td>
-                    <td>Remove</td>
-                </tr>
-            </table>
+            </tbody>
+        </Table>
         </div>
     )
 }
