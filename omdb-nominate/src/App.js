@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import SearchBar from './components/SearchBar'
-import ListBoxes from  './components/ListBoxes'
+import MovieTables from  './components/MovieTables'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <div>
             <Header />
             <SearchBar />
-            <ListBoxes />
+            <MovieTables />
         </div>
     )
 }
